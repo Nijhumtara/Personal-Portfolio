@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portStyle.css">
+</head>
+<body>
+    <div id="half_body">
+        <nav>
+            <div id="navBar">
+                <span>NAZMA BEGUM</span>
+                <div id="options">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="section" id="front">
+                <div id="frontText">
+                    <h2>Hi, I'm<h1>NAZMA</h1></h2>
+                    <p>Aspiring Front-End Developer | Programmer<br>
+                    <br><i>"Web development is the art of weaving dreams into code,
+                    <br>where creativity meets functionality to build the bridges<br>of the digital world"</i></p>
+                </div>
+                <div id="frontImg"></div>
+            </div> 
+        </section>
+        <section id="about">
+            <div class="section">
+                <div class="heading">
+                    <h3>ABOUT ME</h3>
+                </div>
+                <div id="about_container">
+                    <div id="abtImg"></div>
+                    <div id="aboutText">
+                            I'm a passionate Front-End Web Developer and CSE student at Leading University. I love crafting visually appealing, interactive, and responsive websites using HTML, CSS, and JavaScript.
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </div>
+    <div id="full_body">
+        <section id="skills">
+            <div class="section" id="skills_container">
+                <div class="heading">
+                    <h3>SKILLS</h3>
+                </div>
+                <div id="skillsList">
+                    <div class="skill">
+                        <div class="img" id="c">
+                        </div>
+                        <div class="text">C++</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="html">
+                        </div>
+                        <div class="text">HTML</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="css">
+                        </div>
+                        <div class="text">CSS</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="js">
+                        </div>
+                        <div class="texrt">JS</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="msw">
+                        </div>
+                        <div class="text">MS Word</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="git">
+                        </div>
+                        <div class="text">Git</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="pp">
+                        </div>
+                        <div class="text">PowerPoint</div>
+                    </div>
+                    <div class="skill">
+                        <div class="img" id="alg">
+                        </div>
+                        <div class="text">Algorithm</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="section" id="proj_container">
+                <div class="heading">
+                    <h3>PROJECTS</h3>
+                </div>
+                <div id="projects">
+                    <div class="project" onclick="openModal('modal1')">
+                        <h3>Amazon Home-Page</h3>
+                        <p>Desktop-only Amazon homepage replica using HTML & CSS. Best viewed on wide screens. Responsive version coming soon.</p>
+                    </div>
+                    <div class="project" onclick="openModal('modal2')">
+                        <h3>Rock-Paper-Scissor</h3>
+                        <p>A fun and interactive game where you play against the computer. Built with JavaScript for quick gameplay and instant results.</p>
+                    </div>
+                    <div class="project" onclick="openModal('modal3')">
+                        <h3>Responsive Analog Clock</h3>
+                        <p>A stylish, real-time analog clock built with HTML, CSS, and JavaScript. Fully responsive and works smoothly on all devices.</p>
+                    </div>
+                    <div class="project" onclick="openModal('modal4')">
+                        <h3>Currency Convertor</h3>
+                        <p>A responsive web application to accurately convert amounts between different currencies.</p>
+                    </div>
+                    <div class="project" onclick="openModal('modal5')">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>A simple and interactive two-player game built with JavaScript. Features a clean UI, win detection, and restart option.</p>
+                    </div>
+                    <div class="project" onclick="openModal('modal6')">
+                        <h3>TestyBites Website</h3>
+                        <p>Based on a tutorial, but fully customized with my own content, layout changes, and design improvements.</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <section id="contact">
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <p>Email: nijhumtara1311@gmail.com</p>
+                <p>Phone: +8801331-418022</p>
+            </div>
+       </section>
+       <footer>
+            <p>© 2025 Nazma Begum. All Rights Reserved.</p>
+       </footer>
+    </div>
+    <!-- Modals for each project -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <iframe src="Amazon/amazon.html"></iframe>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <iframe src="Rock-Paper-Scissor/index.html"></iframe>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <iframe src="AnalogClock/index.html"></iframe>
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <iframe src="CurrencyConvertor PJ/index.html"></iframe>
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <iframe src="Tic-Tac-Toe PJ/index.html"></iframe>
+        </div>
+    </div>
+    <div class="modal" id="modal6">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <iframe src="Foods and Vegetables Website/index.html"></iframe>
+        </div>
+    </div>
+
+   <script src="port.js"></script>
+</body>
+</html>
