@@ -85,3 +85,61 @@ body{
     z-index: 3;
     border-radius: 50%;
 }
+/*Making Responsive*/
+
+@media(max-width: 430px){
+    #container{
+        height : 350px;
+        width : 350px;
+    }
+    #clock{
+        height: 270px;
+        width: 270px;
+    }
+    .hr{
+        height: 100px;
+        width: 100px;
+    }
+    .min{
+        height: 150px;
+        width: 150px;
+    }
+    .sec{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media(max-width: 360px){
+    #container{
+        height : 250px;
+        width : 250px;
+    }
+    #clock{
+        height: 200px;
+        width: 200px;
+    }
+    .hr{
+        height: 70px;
+        width: 70px;
+    }
+    .min{
+        height: 110px;
+        width: 110px;
+    }
+    .sec{
+        height: 140px;
+        width: 140px;
+    }
+    .hr::before{
+        height: 35px;
+        width: 3px;
+    }
+    .min::before{
+        height: 50px;
+        width: 3.5px;
+    }
+    .sec::before{
+        height: 65px;
+        width: 2px;
+    }
+}
