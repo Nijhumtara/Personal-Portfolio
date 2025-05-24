@@ -65,3 +65,82 @@ img{
     background-color: #5E503F;
     color: #F2F4F3;
 }
+
+/*Making Responsive*/
+
+@media(max-width: 540px){
+    #container{
+        height: 160px;
+    }
+    .choice{
+        height: 120px;
+        width: 120px;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    #Score-board{
+        height: 150px;
+        font-size: 2rem;
+        gap: 3rem;
+    }
+    #user-score,#comp-score{
+        font-size: 3rem;
+    }
+    .msg{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+@media(max-width: 430px){
+    #container{
+        height: 130px;
+    }
+    .choice{
+        height: 95px;
+        width: 95px;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    #Score-board{
+        height: 100px;
+        font-size: 2rem;
+        gap: 3rem;
+    }
+    #user-score,#comp-score{
+        font-size: 2.3rem;
+    }
+    .msg{
+        font-size: 1rem;
+    }
+    #Score-board{
+        margin-top: 2rem;
+    }
+}
+@media(max-width: 375px){
+    h1{
+        height: 5rem;
+        font-size: 2rem;
+    }
+    #container{
+        height: 130px;
+        gap: 1.5rem;
+    }
+    .choice{
+        height: 80px;
+        width: 80px;
+    }
+    img{
+        height: 65px;
+        width: 65px;
+    }
+    #Score-board{
+        margin-top: 2rem;
+    }
+    .msg{
+        font-size: 0.875rem;
+    }
+}
