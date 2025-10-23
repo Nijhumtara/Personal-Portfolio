@@ -440,5 +440,9 @@ footer p{
     .project {
         width: 75%;
     }
+    .modal-content {
+        width: 95%;
+        height: 85%;
+    }
 
 }
