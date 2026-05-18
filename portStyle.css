@@ -49,6 +49,8 @@ nav {
 #navBar {
   height: 60px;
   width: 95%;
+  position: fixed;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,17 +65,16 @@ nav {
   font-family: "Lucida Handwriting", cursive;
 }
 #navBar #options {
-  height: 50px;
-  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-right: 10px;
 }
 #options a {
   text-decoration: none;
   color: #ffffff;
-  border-radius: 2rem;
-  padding: 0.4rem;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.9rem;
 }
 #options a:hover {
   background-color: #0d1b2a;
@@ -127,17 +128,6 @@ section {
   gap: 3rem;
   margin-top: 3rem;
 }
-@keyframes scaleMove {
-  0%,
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(169, 153, 133, 0.4);
-  }
-  50% {
-    transform: scale(1.04);
-    box-shadow: 0 0 0 12px rgba(169, 153, 133, 0);
-  }
-}
 
 #abtImg {
   background-image: url("about.jpg");
@@ -146,7 +136,6 @@ section {
   width: 200px;
   border-radius: 50%;
   margin-left: 2rem;
-  animation: scaleMove 3s ease-in-out infinite;
 }
 #aboutText {
   height: auto;
@@ -170,6 +159,8 @@ section {
   width: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 2rem;
   margin-top: 2rem;
 }
@@ -451,7 +442,8 @@ footer p {
     font-size: 0.7rem;
   }
   #options a {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    padding: 0.5rem 0.7rem;
   }
   #front {
     flex-direction: column-reverse;
