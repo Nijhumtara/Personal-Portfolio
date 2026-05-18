@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="portStyle.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "YOUR_PUBLIC_KEY",
-        });
-      })();
-    </script>
   </head>
   <body>
     <div id="half_body">
@@ -193,7 +182,11 @@
           <p>Email: nijhumtara1311@gmail.com</p>
           <div id="feedback">
             <h2>Contact Me :</h2>
-            <form action="" id="form">
+            <form
+              action="https://formspree.io/f/maqkygza"
+              method="POST"
+              id="form"
+            >
               <div>
                 <p>Name</p>
                 <input
@@ -202,6 +195,8 @@
                   type="text"
                   name="name"
                   placeholder="John Doe"
+                  autocomplete="off"
+                  required
                 />
               </div>
               <div>
@@ -212,6 +207,8 @@
                   type="email"
                   name="email"
                   placeholder="john123@gmail.com"
+                  autocomplete="off"
+                  required
                 />
               </div>
               <div>
@@ -222,6 +219,8 @@
                   type="text"
                   name="subject"
                   placeholder="Project Inquiry"
+                  autocomplete="off"
+                  required
                 />
               </div>
               <div>
@@ -230,11 +229,16 @@
                   class="input-field"
                   id="message"
                   rows="4"
+                  minlength="5"
                   required
+                  name="textarea"
                   placeholder="Tell me about your project..."
+                  autocomplete="off"
                 ></textarea>
               </div>
-              <button id="button" type="submit" onclick="sendMail()">Send Message</button>
+              <button id="button" type="submit" onclick="sendMail()">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
