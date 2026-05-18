@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="portStyle.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "YOUR_PUBLIC_KEY",
+        });
+      })();
+    </script>
   </head>
   <body>
     <div id="half_body">
@@ -178,8 +189,54 @@
       </section>
       <section id="contact">
         <div class="contact">
-          <h2>Contact Me</h2>
+          <h2>Contact</h2>
           <p>Email: nijhumtara1311@gmail.com</p>
+          <div id="feedback">
+            <h2>Contact Me :</h2>
+            <form action="" id="form">
+              <div>
+                <p>Name</p>
+                <input
+                  class="input-field"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div>
+                <p>Email</p>
+                <input
+                  class="input-field"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="john123@gmail.com"
+                />
+              </div>
+              <div>
+                <p>Subject</p>
+                <input
+                  class="input-field"
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Project Inquiry"
+                />
+              </div>
+              <div>
+                <p>Message</p>
+                <textarea
+                  class="input-field"
+                  id="message"
+                  rows="4"
+                  required
+                  placeholder="Tell me about your project..."
+                ></textarea>
+              </div>
+              <button id="button" type="submit" onclick="sendMail()">Send Message</button>
+            </form>
+          </div>
         </div>
       </section>
       <footer>
