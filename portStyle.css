@@ -229,6 +229,7 @@ section {
   background-color: #0d1b2a;
   color: #a99985;
   border-radius: 2rem;
+  text-decoration: none;
 }
 .project h3:hover {
   cursor: pointer;
